@@ -11,6 +11,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
         const textToCopy = textElement.innerText.trim();
 
         alert("Number Copy : " + textToCopy)
+        await navigator.clipboard.writeText(textToCopy);
 
         const copyCnt = parseInt(document.getElementById('copy-cnt').innerText);
         const copyCntTotal = copyCnt + 1;

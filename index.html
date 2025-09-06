@@ -29,7 +29,7 @@
                     </div>
                     <div
                         class="flex rounded-[50px] bg-[#41ff6b1a] h-[52px] w-[123px] p-[12px]] justify-center items-center gap-[12px]">
-                        <p class="font-black"> 100 </p>
+                        <p class="font-black"> <span id="coin-btn">100</span> </p>
                         <img class="h-6 w-[24px]" src="./assets/coin.png" alt="">
                     </div>
                     <p
@@ -68,13 +68,13 @@
                 <p class="text-[#5c5c5c] text-[18px] ">National Emergency</p>
                 <h1 class="text-[32px] font-bold mb-[10px] card-text">999</h1>
                 <div class="mb-[30px] ">
-                    <pc><span class="rounded-full bg-[#f2f2f2] p-[6px]">ALL</span> </pc>
+                    <p><span class="rounded-full bg-[#f2f2f2] p-[6px]">ALL</span> </p>
 
                 </div>
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180"></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180"></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180"></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -126,16 +126,10 @@
                 <!-- call history -->
                  <div class="flex justify-between items-centerm-[24px] m-[24px]">
                     <p> <i class="fa-regular fa-clock h-[24px] w-[24px]"></i> <span class="font-[500] text-[20px]"> Call History</span> </p>
-                    <button class="btn  text-white bg-[#00a63e] rounded-[50px]  px-[36px] py-[12px]">Clear</button>
+                    <button id="clear-btn" class="btn  text-white bg-[#00a63e] rounded-[50px]  px-[36px] py-[12px] ">Clear</button>
                  </div>
-                 <div class="flex justify-between items-center m-[24px] p-[12px] rounded-[8px] bg-[#FAFAFA] mt-[16px]">
-                    <div>
-                        <p class="font-semibold text-[18px]">Fire Service Number</p>
-                    <p>999</p>
-                    </div>
-                    <div>
-                        <p>11:36:58 AM</p>
-                    </div>
+                 <div id="call-container">
+                    
                  </div>
             </div>
             <!-- ambulance service -->
@@ -156,7 +150,7 @@
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180"></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -178,7 +172,7 @@
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180"></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -200,7 +194,7 @@
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i
                             class="fa-regular fa-copy -rotate-180 "></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
@@ -220,7 +214,7 @@
                 </div>
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i class="fa-regular fa-copy -rotate-180 " ></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- brac-helplin  -->
@@ -239,7 +233,7 @@
                 </div>
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn " type="button" data-copy-target=".card-text"><i class="fa-regular fa-copy -rotate-180" ></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Bangladesh-Railway -->
@@ -258,25 +252,10 @@
                 </div> 
                 <div class="flex gap-[20px]">
                     <button class="btn w-[50%] rounded-[8px] copy-btn" type="button" data-copy-target=".card-text"><i class="fa-regular fa-copy -rotate-180" ></i>Copy</button>
-                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                    <button class="btn w-[50%] rounded-[8px] bg-[#00A63E] text-white call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
-            <div class="row-span-3  rounded-[12px] shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-white block md:hidden ">
-                <!-- call history -->
-                 <div class="flex justify-between items-centerm-[24px] m-[24px]">
-                    <p> <i class="fa-regular fa-clock h-[24px] w-[24px]"></i> <span class="font-[500] text-[20px]"> Call History</span> </p>
-                    <button class="btn  text-white bg-[#00a63e] rounded-[50px]  px-[36px] py-[12px]">Clear</button>
-                 </div>
-                 <div class="flex justify-between items-center m-[24px] p-[12px] rounded-[8px] bg-[#FAFAFA] mt-[16px]">
-                    <div>
-                        <p class="font-semibold text-[18px]">Fire Service Number</p>
-                    <p>999</p>
-                    </div>
-                    <div>
-                        <p>11:36:58 AM</p>
-                    </div>
-                 </div>
-            </div>
+            
             
 
         </div>
@@ -288,6 +267,7 @@
 
     <script src="./script.js"></script>
     <script src="./copy.js"></script>
+    <script src="./calling.js"></script>
 
 </body>
 
